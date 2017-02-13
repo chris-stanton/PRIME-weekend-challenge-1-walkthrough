@@ -1,56 +1,52 @@
 <!doctype html>
 
 <html>
- <head>
+<head>
   <meta charset="utf-8">
   <script src="jquery.js"></script>
   <script type="text/javascript" src="client.js"></script>
   <link type="text/css" rel="stylesheet" href="styles.css">
   <title>Weekend Challenge 1</title>
- </head>
+</head>
 
-  <body>
+<body>
 
-    <h1>Weekend Challenge 1<h1>
-<!-- New Employee Form -->
-      <label for="firstName">First Name</label>
-      <input type="text" name="firstName" placeholder="firstName" id="firstName">
+  <h1>Weekend Challenge 1</h1>
+    <!-- New Employee Form -->
+    <label for="firstName">First Name</label>
+    <input type="text" name="firstName" placeholder="firstName" id="firstName">
 
-      <label for="lastName">Last Name</label>
-      <input type="text" name="lastName" placeholder="lastName" id="lastName">
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" placeholder="lastName" id="lastName">
 
-      <label for="idNumber">ID Number</label>
-      <input type="text" name="idNumber" placeholder="idNumber" id="idNumber">
+    <label for="idNumber">ID Number</label>
+    <input type="text" name="idNumber" placeholder="idNumber" id="idNumber">
 
-      <label for="jobTitle">Job Title</label>
-      <input type="text" name="jobTitle" placeholder="jobTitle" id="jobTitle">
+    <label for="jobTitle">Job Title</label>
+    <input type="text" name="jobTitle" placeholder="jobTitle" id="jobTitle">
 
-      <label for="annualSalary">Annual Salary</label>
-      <input type="text" name="annualSalary" placeholder="annualSalary" id="annualSalary">
+    <label for="annualSalary">Annual Salary</label>
+    <input type="text" name="annualSalary" placeholder="annualSalary" id="annualSalary">
 
-      <button type="button" id="SubmitNewEmployee">Submit</button>
+    <button type="button" id="submitNewEmployee">Submit</button>
 
-<!-- Table of Employee -->
-  <h3>Emplyee List</h3>
-<table>
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>ID</th>
-      <th>Title</th>
-      <th>Annual Salary</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Chris</td>
-      <td>Stanton</td>
-      <td>123</td>
-      <td>Boss</td>
-      <td>12</td>
-    </tr>
-  </tbody>
-</table>
+    <!-- Table of Employee -->
+    <h3>Emplyee List</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody id='employeeTableBody'>
+      </tbody>
+    </table>
+  <!-- monthly expenditure -->
+    <h3>Monthly Salary Expenditures: <span id='monthlyExspenses'>0</span></h3>
   </body>
 </html>
